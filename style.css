@@ -1,0 +1,750 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat Medium',sans-serif;
+	max-width: 100%;
+}
+body
+{
+	width: 100%;
+	height: 2800px;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img/pexels-pok-rie-2049422.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+a
+{
+	text-decoration: none;
+	color: white;
+}
+.header
+{
+	width: 100%;
+	min-height: 42px;
+	background-color:beige;
+	display: flex;
+	justify-content: space-between;
+}
+.logo-list
+{
+	padding-left: 0;
+	margin: auto 36px;
+}
+.logo-item
+{
+	position: relative;
+	color: black;
+	font-family:'Poppins Light',sans-serif;
+	list-style: none;
+	margin-right: 16px;
+	display: inline-block;
+	transition: color 0.5s ease-in-out;
+	cursor: pointer;	
+	font-weight: bold;
+	font-size: 20px;
+}
+.logo-item a
+{
+	text-decoration: none;
+	color: black;
+	font-family:'Poppins Light',sans-serif;
+	transition: color 0.5s ease-in-out;
+}
+.logo-item:hover
+{
+	color: tomato;
+}
+.logo-item a:hover{
+	color: tomato;
+}
+.logo-item::after
+{
+	position: absolute;
+	content: "";
+	background-color: black;
+	width: 100%;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 1s ease-in-out;
+}
+.logo-item:hover::after
+{
+	transform: scaleX(1);
+}
+.banner
+{
+	display: flex;
+	max-width: 800px;
+	height: 230px;
+	margin: auto;
+}
+.banner-item
+{
+	text-shadow: none;
+	position: relative;
+	color: wheat;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	margin: auto;
+	transition: text-shadow 1s ease-out;
+}
+.banner-item:hover{
+	text-shadow: 0 0 10px white;
+}
+.banner-item::after
+{
+	content: "";
+	background-color: aquamarine;
+	width: 100%;
+	height: 2px;
+	bottom: -5px;
+	position: absolute;
+	left: 0;
+}
+.slideshow
+{
+	margin-top: -150px;
+	display: flex;
+}
+.anh1
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.anh1-item{
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.anh1-item:first-child
+{
+	opacity: 1;
+}
+@keyframes anh1
+{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+.anh1-item:nth-child(1)
+{
+	animation: anh1 8s infinite;
+}
+.anh1-item:nth-child(2)
+{
+	animation: anh1 8s infinite;
+	animation-delay: 2s;
+}
+.anh1-item:nth-child(3)
+{
+	animation: anh1 8s infinite;
+	animation-delay: 5s;
+}
+.anh2
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.anh2-item{
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.anh2-item:first-child
+{
+	opacity: 1;
+}
+@keyframes anh2
+{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+.anh2-item:nth-child(1)
+{
+	animation: anh2 8s infinite;
+}
+.anh2-item:nth-child(2)
+{
+	animation: anh2 8s infinite;
+	animation-delay: 2s;
+}
+.anh2-item:nth-child(3)
+{
+	animation: anh2 8s infinite;
+	animation-delay: 5s;
+}
+.anh3
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.anh3-item{
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.anh3-item:first-child
+{
+	opacity: 1;
+}
+@keyframes anh3
+{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+.anh3-item:nth-child(1)
+{
+	animation: anh3 8s infinite;
+}
+.anh3-item:nth-child(2)
+{
+	animation: anh3 8s infinite;
+	animation-delay: 2s;
+}
+.anh3-item:nth-child(3)
+{
+	animation: anh3 8s infinite;
+	animation-delay: 5s;
+}
+.content
+{
+	display: flex;
+	justify-content: space-around;
+	padding: 12px;
+}
+.content p
+{
+	color: white;
+	border: 1px solid white;
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+	font-family: 'Montserrat Light',sans-serif;
+	position: relative;
+	overflow: hidden;
+	transition: color 1s ease-in-out;
+}
+.content h2
+{
+	cursor: pointer;
+	color: none;
+	text-shadow: none;
+	position: relative;
+	font-family:'Montserrat Black',sans-serif;
+	transition: text-shadow 1s ease-in-out;
+	transition: color 1s ease-in-out;
+}
+.content h2::after
+{
+	content: "";
+	background-color: aquamarine;
+	width: 100%;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	position: absolute;
+}
+.content h2:hover{
+	color: antiquewhite;
+	text-shadow: 0 0 10px wheat;
+}
+.item{
+	margin-top: -150px;
+	padding: 0 106px;
+	flex: 1;
+}
+.content1
+{
+	color: white;
+}
+.content2
+{
+	color: white;
+}
+.content3
+{
+	color: white;
+}
+span
+{
+	background: #ECECEC;
+	height: 100%;
+	width: 0%;
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	transition: 1s;
+}
+.content p:hover span
+{
+	width: 100%;
+}
+.content p:hover{
+	color: black;
+}
+.introduce
+{
+	width: 100%;
+	height: 200px;
+	margin: auto;
+	display: flex;
+}
+.introduce-item{
+	color: white;
+	font-family:'Montserrat Thin',sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	margin: auto;
+	text-align: center;
+	margin-top: -50px;
+}
+.footer p
+{
+	font-family: 'Montserrat ExtraLight',sans-serif;
+	color: white;
+}
+.slideshow2
+{
+	margin-top: 50px;
+	display: flex;
+}
+.anhF1
+{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+}
+.anhF1-item{
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.anhF1-item:first-child
+{
+	opacity: 1;
+}
+@keyframes anhF1
+{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+.anhF1-item:nth-child(1)
+{
+	animation: anhF1 5s infinite;
+}
+.anhF1-item:nth-child(2)
+{
+	animation: anhF1 5s infinite;
+	animation-delay: 2s;
+}
+.anhF1-item:nth-child(3)
+{
+	animation: anhF1 5s infinite;
+	animation-delay: 5s;
+}
+.anhF2
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.anhF2-item{
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.anhF2-item:first-child
+{
+	opacity: 1;
+}
+@keyframes anhF2
+{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+.anhF2-item:nth-child(1)
+{
+	animation: anhF2 5s infinite;
+}
+.anhF2-item:nth-child(2)
+{
+	animation: anhF2 5s infinite;
+	animation-delay: 2s;
+}
+.anhF2-item:nth-child(3)
+{
+	animation: anhF2 5s infinite;
+	animation-delay: 5s;
+}
+.anhF3
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.anhF3-item{
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.anhF3-item:first-child
+{
+	opacity: 1;
+}
+@keyframes anhF3
+{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+.anhF3-item:nth-child(1)
+{
+	animation: anhF3 5s infinite;
+}
+.anhF3-item:nth-child(2)
+{
+	animation: anhF3 5s infinite;
+	animation-delay: 2s;
+}
+.anhF3-item:nth-child(3)
+{
+	animation: anhF3 5s infinite;
+	animation-delay: 5s;
+}
+.textBox
+{
+	width: 70%;
+	height: 100px;
+	margin: -100px auto auto auto;
+}
+.textBox h2
+{
+	cursor: pointer;
+}
+.textBox a
+{
+	color: #ffd3b6
+}
+.content-text1{
+	display: flex;
+}
+.content-text1-item
+{
+	width: 300px;
+	height: 200px;
+}
+.content-font1
+{
+	color:white;
+	background-color: transparent;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 20px;
+	transition: background-color 1s ease-in-out;
+	transition: color 0.5s ease-in-out;
+	transition: 1s;
+}
+.content-font1:hover{
+	background: white;
+	color: black;
+}
+.content-text2{
+	display: flex;
+	margin-top: 50px;
+}
+.content-text2-item
+{
+	min-width: 300px;
+	height: 200px;
+}
+.content-font2
+{
+	color:white;
+	background-color: transparent;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 20px;
+	transition: background-color 1s ease-in-out;
+	transition: color 0.5s ease-in-out;
+	transition: 1s;
+}
+.content-font2:hover{
+	background: white;
+	color: black;
+}
+.content-text3{
+	margin-top: 50px;
+	display: flex;
+}
+.content-text3-item
+{
+	width: 300px;
+	height: 200px;
+}
+.content-font3
+{
+	color:white;
+	background-color: transparent;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 20px;
+	transition: background-color 1s ease-in-out;
+	transition: color 0.5s ease-in-out;
+	transition: 1s;
+}
+.content-font3:hover{
+	background: white;
+	color: black;
+}
+.textBox img
+{
+	border: 4px solid white;
+	border-radius: 10px;
+}
+.textBox h2
+{
+	position: relative;
+	max-width: 150px;
+	font-family: 'Montserrat SemiBold',sans-serif;
+}
+.textBox h2::after{
+	content: "";
+	background-color:aquamarine;
+	width: 100%;
+	height: 2px;
+	bottom: -5px;
+	position: absolute;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.5s ease-in-out;
+}
+.textBox h2:hover::after
+{
+	transform: scaleX(1);
+}
+.textBox p
+{
+	margin-top: 10px;
+	font-family: 'Montserrat ExtraLight',sans-serif;
+	font-weight: bold;
+}
+.footer
+{
+	color:white;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	bottom: 0;
+}
+.aboutUs
+{
+	text-align: center;
+	margin: auto;
+}
+.aboutUs h2
+{
+	font-family: 'Poppins Medium',sans-serif;
+}
+.contactMe
+{
+	background-color: rgba(128,125,125,0.5);
+	position: absolute;
+	top: 87%;
+	left: 50%;
+	transform:  translate(-50%,-50%);
+	width: 75%;
+	height: 300px;
+	text-align: center;
+	color: white;
+	border: 2px solid white;
+	padding: 70px;
+	border-radius: 30px;
+}
+.caption
+{
+	margin-top: -50px;
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-family: 'Montserrat',sans-serif;
+	text-decoration:underline;
+	text-decoration-color: aquamarine;
+}
+.information
+{
+	margin-bottom: 30px;
+	text-align: left;
+}
+.information input
+{
+    margin-top: 10px;
+	width: 100%;
+	height: 30px;
+	border: 1px solid white;
+	border-radius: 20px;
+	padding-left: 10px;
+}
+.information label
+{
+	font-family: 'Montserrat light',sans-serif;
+}
+.send{
+	margin: auto;
+	width: 5%;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 20px;
+	border: 2px solid white;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+span1{
+	width: 100%;
+	height: 100%;
+	background:#4CD4CE;
+	position: absolute;
+	border-radius: 20px;
+	left: 0;
+	z-index: -1;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition: transform 0.5s ease-in-out;
+}
+.send:hover span1{
+	transform: scaleX(1);
+}
+.send:hover{
+	border: none;
+}
+.send-item
+{
+	cursor: pointer;
+	color: white;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	margin-top: 10px;
+	background: none;
+	border: none;
+	text-transform: uppercase;
+}
